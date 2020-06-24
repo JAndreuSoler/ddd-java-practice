@@ -1,4 +1,4 @@
-package tv.codely.mooc.apps.controller;
+package tv.codely.apps.mooc.controller;
 
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,12 +16,13 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
 public abstract class ApplicationTestCase {
     @Autowired
-    private MockMvc  mockMvc;
+    private MockMvc mockMvc;
 
 
     protected void assertResponse(
